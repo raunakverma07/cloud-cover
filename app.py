@@ -97,4 +97,7 @@ if st.button("🚀 Predict Now"):
         font-weight:bold;">
         {result}
     </div>
-    """, unsafe_allow_html=True
+    """, unsafe_allow_html=True)
+    # Footer
+st.write("---")
+st.markdown("<center>⚡ Built by Raunak</center>", unsafe_allow_html=True)
