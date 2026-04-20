@@ -1,4 +1,4 @@
-import streamlit as st import joblib import numpy as np
+import streamlit as st import joblib
 
 Page Config
 
@@ -38,7 +38,7 @@ st.markdown("---")
 
 Prediction Button
 
-if st.button("🔮 Predict Cloud Cover"): if model is None: st.warning("Model not loaded properly.") else: try: sample = np.array([[temperature, humidity, wind_speed, visibility]]) prediction = model.predict(sample)
+if st.button("🔮 Predict Cloud Cover"): if model is None: st.warning("Model not loaded properly.") else: try: sample = [[temperature, humidity, wind_speed, visibility]] prediction = model.predict(sample)
 
 st.success(f"☁️ Predicted Cloud Cover: {prediction[0]}")
 
