@@ -1,11 +1,12 @@
-import streamlit as st
-import joblib
+import streamlit as st import joblib
 
 st.set_page_config(page_title="Cloud Cover Predictor", page_icon="☁️", layout="centered")
 
 st.markdown(""" <style> .main { background: linear-gradient(to right, #dfe9f3, #ffffff); } .stButton>button { background-color: #4CAF50; color: white; border-radius: 10px; height: 3em; width: 100%; font-size: 18px; } .stNumberInput input { border-radius: 8px; } </style> """, unsafe_allow_html=True)
 
-@st.cache_resource def load_model(): try: return joblib.load("Cloud_cover.pkl") except Exception as e: st.error(f"Error loading model: {e}") return None
+@st.cache_resource 
+def load_model(): 
+ try: return joblib.load("Cloud_cover.pkl") except Exception as e: st.error(f"Error loading model: {e}") return None
 
 model = load_model()
 
