@@ -1,4 +1,4 @@
-import streamlit as st import joblib
+import streamlit as st import joblib 
 
 st.set_page_config(page_title="Cloud Cover Predictor", page_icon="☁️", layout="centered")
 
