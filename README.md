@@ -1,4 +1,4 @@
-# ☁️ Cloud Cover Prediction App
+# ☁️ Cloud Cover Prediction App...
 
 This is a Machine Learning web app built using **K-Nearest Neighbors (KNN)** that predicts **Cloud Cover** based on weather conditions.
 
