@@ -2,7 +2,7 @@
 
 This is a Machine Learning web app built using **K-Nearest Neighbors (KNN)** that predicts **Cloud Cover** based on weather conditions.
 
-The app is deployed using **Streamlit** and hosted online.
+The app is deployed using **Streamlit** and hosted online. 
 
 ---
 
